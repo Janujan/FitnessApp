@@ -46,6 +46,6 @@ public class startWorkout extends ActionBarActivity implements View.OnClickListe
     public void returnMain(View v){
 
         Toast.makeText(this, "Returning to main activity", Toast.LENGTH_SHORT).show();
-        startActivity(new Intent(startWorkout.this, MainActivity.class));
+        finish();
     }
 }
