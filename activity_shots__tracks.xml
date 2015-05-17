@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.janujanselva.shottracker.Shots_Tracks"
+    android:id="@+id/main">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/made_twos"
+                android:paddingLeft="0dp"/>
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="65dp"
+                android:text="^"
+                android:textSize="50dp"
+                android:id="@+id/increaseTwo"
+                android:onClick="twoIncrease"/>
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="65dp"
+                android:text="^"
+                android:textSize="50dp"
+                android:id="@+id/decreaseTwo"
+                android:rotation="180"
+                android:onClick="twoDecrease"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="75dp"
+            android:text="30"
+            android:id="@+id/madeTwos"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="75dp"
+            android:text="/"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="75dp"
+            android:text="30"
+            android:id="@+id/attemptTwos"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:id="@+id/threes">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/made_threes"
+                android:paddingLeft="0dp"/>
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="65dp"
+                android:text="^"
+                android:textSize="50dp"
+                android:id="@+id/increaseThrees"
+                android:onClick="threeIncrease"/>
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="65dp"
+                android:text="^"
+                android:textSize="50dp"
+                android:id="@+id/decreaseThrees"
+                android:rotation="180"
+                android:onClick="threeDecrease"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="75dp"
+            android:text="30"
+            android:id="@+id/madeThrees"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="65dp"
+            android:text="/"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="75dp"
+            android:text="30"
+            android:id="@+id/attemptThrees"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/threes"
+        android:layout_marginTop="25dp"
+        android:padding="30dp"
+        android:text="Save"
+        android:textSize="35dp"
+        android:onClick="save"
+        android:textColor="@color/background_material_dark"/>
+</RelativeLayout>
