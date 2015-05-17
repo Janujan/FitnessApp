@@ -2,6 +2,7 @@ package com.example.janujanselva.fitnessapp;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -14,6 +15,8 @@ public class startWorkout extends ActionBarActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start_workout);
+        Log.d("startWorkout", "Entered Start Workout Activity");
+
     }
 
 
